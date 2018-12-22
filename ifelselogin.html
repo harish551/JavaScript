@@ -23,13 +23,19 @@ The password is checked as follows:
 	if(name){
 		if(name.toUpperCase()== "Admin".toUpperCase()){
 			let password = prompt("Enter password")
-			if(password == "TheMaster"){
-				alert("Welcome")
+			if(password){
+				if(password == "TheMaster"){
+					alert("Welcome")
+				}
+				else{
+					alert("Wrong password")
+				}
 			}
 			else{
-				alert("Wrong password")
+				alert("cancelled")
 			}
-		}
+		}	
+
 		else{
 			alert("I don't know you!!")
 		}
