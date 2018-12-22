@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prime or not</title>
+</head>
+<body>
+ <script>
+ 	'use strict'
+ 	let num = +prompt("Enter a number")
+ 	if(num==2){ alert("Prime number")}
+ 	else if(num%2 ==0){
+ 		alert("Not a Prime number");
+ 	}
+ 	else{
+ 		let isPrime = true;
+ 		for(let factor = 2; factor<=Math.round(num/2);factor++){
+ 			if(num%factor==0) {
+ 				isPrime = false;
+ 				break;
+ 			}
+ 		}
+ 		(isPrime)?alert("Prime number"):alert("Not a prime number");
+ 	}	
+
+ </script>
+</body>
+</html>
