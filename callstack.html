@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>call stack</title>
+</head>
+<body>
+	<script>
+		'use strict'
+
+		function a(){
+			let name = "harsh";
+			console.log("completed");
+
+		}
+		function b(){
+			let name = "hari";
+			let age = 15;
+			a();
+
+		}
+		function c(){
+			let name = "harish";
+			let age = 21;
+			b();
+
+		}
+		c();
+
+
+	</script>
+
+</body>
+</html>
