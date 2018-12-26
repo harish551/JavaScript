@@ -1,3 +1,6 @@
+/* Given an array A and number x, find sum of any two numbers in array is equals to given number x print True if not print False
+ *–Note: (Time Complexity less than O(n square)).
+*/
 function hasPair(arr, x) {
 
   let first = 0;
