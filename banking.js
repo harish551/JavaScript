@@ -1,5 +1,6 @@
-let bank = (function () {
+let Bank = function (name) {
   return {
+  	name : name,
     balance: 0,
     showBalance: function () {
       console.log('Balance: ' + this.balance)
@@ -15,10 +16,18 @@ let bank = (function () {
       console.log('Available balance: ' + this.balance)
     }
   }
-})()
+}
 
-bank.showBalance()
-bank.deposit(10000)
-bank.withdraw(100)
+let harishAc = new Bank("harish");
 
-bank.showBalance()
+harishAc.showBalance()
+harishAc.deposit(10000)
+harishAc.withdraw(100)
+
+console.log(harishAc)
+
+let othersAc = new Bank("other person");
+harishAc.deposit(10000)
+harishAc.withdraw(100)
+console.log(othersAc);
+
